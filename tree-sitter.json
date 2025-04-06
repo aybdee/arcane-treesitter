@@ -1,0 +1,40 @@
+{
+  "$schema": "https://tree-sitter.github.io/tree-sitter/assets/schemas/config.schema.json",
+  "grammars": [
+    {
+      "name": "arcane",
+      "camelcase": "Arcane",
+      "title": "Arcane",
+      "scope": "source.arcane",
+      "file-types": [
+        "arc"
+      ],
+      "injection-regex": "^arcane$",
+      "class-name": "TreeSitterArcane"
+    }
+  ],
+  "metadata": {
+    "version": "0.1.0",
+    "license": "MIT",
+    "description": "DSL for creating animations",
+    "authors": [
+      {
+        "name": "abundance anyanwu",
+        "email": "abundanceanyanwu@gmail.com",
+        "url": "https://aybdee.xyz/"
+      }
+    ],
+    "links": {
+      "repository": "https://github.com/arcane"
+    }
+  },
+  "bindings": {
+    "c": true,
+    "go": true,
+    "node": true,
+    "python": true,
+    "rust": true,
+    "swift": true,
+    "zig": false
+  }
+}

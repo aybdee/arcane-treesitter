@@ -44,7 +44,7 @@ module.exports = grammar({
 
     assign: ($) => seq($.identifier, "=", $.numerical_expression),
 
-    math_transform: ($) => optional($.sweep),
+    math_transform: ($) => seq($.sweep),
 
     // Axis declaration
     axis_declaration: ($) =>
